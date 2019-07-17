@@ -9,23 +9,24 @@ namespace SweepStakesContest
     class Contestant
     {
         //Member variables 
+        public string name;
+        public string lastName;
+        public string emailAddress;
+        public int registrationNumber;
 
         //Constructor 
 
         //Member methods 
-        public static void ContestestantInfo()
+        public void ContestestantInfo()
         {
             Console.WriteLine("What is your first name?:");
-            string name = Console.ReadLine();
+            name = Console.ReadLine();
 
             Console.WriteLine("What is your last name?:");
-            string lastName = Console.ReadLine();
+            lastName = Console.ReadLine();
 
             Console.WriteLine("What is your email address?:");
-            string emailAddress = Console.ReadLine();
-
-            Console.WriteLine("What is your registration number?:");
-            string registrationNumber = Console.ReadLine();
+            emailAddress = Console.ReadLine();
 
             string fullName = name + " " + lastName;
             Console.WriteLine($"Your full name is: {fullName}");
