@@ -15,15 +15,15 @@ namespace SweepStakesContest
         Random rng;
         Contestant contestant;
         int registerNumber;
+        int contestantWinner;
        
         //Constructor 
 
         //Member methods 
         public void RegisterContestant(Contestant contestant)
         {
-            //Adding the specified key and value to the dictionary
-            // contestant needs to be assigned a registration number
-            // key for new entry shouldn't be 1, but the count of the dictionary (+1?)
+            //Adding contestant to the dictionary 
+            //Also giving the contestant a registration #
             contestant.registrationNumber = ResgistrationNumber();
             dictionary.Add(contestant.registrationNumber, contestant);
 
@@ -37,7 +37,9 @@ namespace SweepStakesContest
 
         }
         public int ResgistrationNumber()
-        {
+        {   
+            //This logic will allow a random # to be generated
+            //Also will return a number from the dictionary 
             int randomNumber = rng.Next(0, dictionary.Count);
             return registerNumber;
         }
@@ -45,17 +47,14 @@ namespace SweepStakesContest
         {
 
         }
-        public void PickWinner(Random Winner)
+        public int PickWinner()
         {
+            //This logic will also allow a random # to be generated
+            //Also will return a number from the dictionary 
             string winner;
-
-
-            Console.WriteLine("");
-
+            int randomWinner = rng.Next(0, dictionary.Count);
+            return contestantWinner; 
         }
-       
-       
 
-       
     }
 }

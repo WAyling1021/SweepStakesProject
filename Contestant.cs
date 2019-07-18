@@ -19,13 +19,13 @@ namespace SweepStakesContest
         //Member methods 
         public void ContestestantInfo()
         {
-            Console.WriteLine("What is your first name?:");
+            Userinterface.GetFirstName();
             name = Console.ReadLine();
 
-            Console.WriteLine("What is your last name?:");
+            Userinterface.GetLastName();
             lastName = Console.ReadLine();
 
-            Console.WriteLine("What is your email address?:");
+            Userinterface.GetEmailAddress();
             emailAddress = Console.ReadLine();
 
             string fullName = name + " " + lastName;
