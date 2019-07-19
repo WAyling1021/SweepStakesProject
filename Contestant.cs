@@ -19,8 +19,8 @@ namespace SweepStakesContest
         //Member methods 
         public void ContestestantInfo()
         {
-            Userinterface.GetFirstName();
-            name = Console.ReadLine();
+            name = Userinterface.GetFirstName();
+            // name = Console.ReadLine();
 
             Userinterface.GetLastName();
             lastName = Console.ReadLine();
@@ -31,7 +31,6 @@ namespace SweepStakesContest
             string fullName = name + " " + lastName;
             Console.WriteLine($"Your full name is: {fullName}");
             Console.ReadLine();
-
 
         }
     }

@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace SweepStakesContest
 {
-    class MarketingFirm
+    public class MarketingFirm 
     {
+        
+        public ISweepstakesManager managementSystem; 
 
+        //constructor injection 
+        public MarketingFirm(ISweepstakesManager managementSystem)
+        {
+            this.managementSystem = managementSystem;
+        }
+
+        
     }
 }

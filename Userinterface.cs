@@ -8,20 +8,32 @@ namespace SweepStakesContest
 {
     static class Userinterface
     {
-        public static void GetFirstName()
+        public static string GetFirstName()
         {
             Console.WriteLine("What is your first name?:");
-         
+            string name = Console.ReadLine();
+            return name;
         }
-        public static void GetLastName()
+        public static string GetLastName()
         {
             Console.WriteLine("What is your last name?:");
+            string lastName = Console.ReadLine();
+            return lastName;
             
         }
-        public static void  GetEmailAddress()
+        public static string GetEmailAddress()
         {
             Console.WriteLine("What is your email address?:");
+            string emailAddress = Console.ReadLine();
+            return emailAddress;
             
+        }
+        public static string GetStackOrQueue()
+        {
+            Console.WriteLine("Would you like to choose stack or queue");
+            string stackOrQueue = Console.ReadLine();
+            return stackOrQueue;
+
         }
     }
 }
